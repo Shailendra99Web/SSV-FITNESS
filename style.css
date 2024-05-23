@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    font-family: "agdasima", sans-serif ;
+    max-width: 80vw;
+}
+
+.navbar{
+    display: flex;
+    height: 67px;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+.navbar>*:not(:last-child){
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar>*:not(:last-child):hover{
+    color: white;
+    background: #3cab5c;
+    cursor: pointer;
+}
+
+.topleft{
+    width:50%;
+}
+.topright{
+    width:50%;
+}
+
+.logo{
+    font-size: 1.3rem;
+}
+
+.section1{
+    color: rgb(42, 110, 62);
+    max-height: 100vh;
+}
+
+.section1 h1{
+    color:rgb(60, 171, 92);
+    font-size: 2rem;
+}
+
+.dumbellimg{
+    width: 189px;
+}
+
+.gym-boy{
+    width: 466px;
+}
+
+.section2 h1{
+    font-size: 2rem;
+}
+
+.section2 p{
+    padding: 0 8vw;
+    text-align: center;
+}
+
+.section2{
+    padding: 73px;
+}
+
+.box{
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid green;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.box h2{
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: rgb(230, 255, 118);
+}
+
+.box ul{
+    list-style: none;
+}
+
+.box ul li{
+    margin: 12px 2px;
+}
+
+.section3{
+    padding: 73px;
+}
+
+.plantable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 table{
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 140px;
+    border-collapse: collapse;
+}
+
+.section3 table th{
+    width: 23vw;
+    padding: 15px 0;
+    /* border: 2px solid black; */
+    border-bottom: 2px solid black;
+}
+
+.section3 table td{
+    /* border: 2px solid black; */
+    border-bottom: 2px solid black;
+
+}
+
+.section3 h1{
+    font-size: 2rem;
+}
+
+.section3{
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+.footer{
+    padding: 23px;
+    text-align: center;
+}
+
+@media screen and (max-width:700px){
+    
+    nav, nav .logo, nav ul{
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-top:10px;
+    }
+
+    .navbar {
+        margin: 10px;
+        height: auto;
+    }
+
+    .join-btn{
+        margin-left: auto !important;
+    }
+
+    .navbar li{
+        margin: 5px;
+    }
+
+    .section1{
+        padding-bottom: 23px;
+    }
+
+    .section2{
+        padding: 0;
+    }
+
+    .section2 p{
+        padding: 0;
+    }
+
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box{
+        width: 60vw;
+    }
+
+
+}
